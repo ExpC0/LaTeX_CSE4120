@@ -1,0 +1,59 @@
+\section*{}
+\begin{center}
+    {\fontsize{14}{1.5}\selectfont \textbf{CHAPTER V}}\\
+    \vspace{12pt}
+    {\fontsize{16}{1.5}\selectfont \textbf{Comparison}}\\
+    \vspace{12pt}
+    \vspace{12pt}
+\end{center}
+
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\addcontentsline{toc}{section}{\textbf{CHAPTER V Comparison}} % Add to ToC
+
+
+
+
+{
+
+\subsection{E2E-LOAD [ End-to-End Long-form Online Action Detection ]
+}
+E2E-LOAD introduces a thorough framework aimed at detecting actions in long, untrimmed videos. This method enhances the understanding of temporal context by using an e2e approach. It features temporal convolutional networks (TCNs) to capture temporal dependencies and integrates both spatial and temporal information to boost detection accuracy. By emphasizing long term dependencies  E2E-LOAD shows strong performance on benchmark datasets making it effective for complex real-world scenarios.
+
+\subsection{IDN [ Information Discrimination Network ]
+}
+The Information Discrimination Network IDN improves the relevance of action detection features by incorporating an Information Discrimination Unit IDU. This unit enhances recurrent neural networks RNNs by filtering out irrelevant information from the input data allowing the network to focus on the ongoing action. The IDU employs current information and an early embedding module to maintain a discriminative representation of the action. IDN has demonstrated significant improvements over state of the art methods on benchmarks such as TVSeries and THUMOS14 effectively handling noisy and cluttered video streams.
+
+\subsection{Methodology and Performance
+}
+
+E2E LOAD utilizes TCNs to capture long term dependencies and combines spatial and temporal data for precise action detection. Its e2e processing of long-form videos minimizes the need for extensive preprocessing. This method excels in scenarios that require detailed temporal context and has shown robustness across various datasets.
+  
+IDN enhances traditional RNNs with the IDU to filter out irrelevant information and emphasize current actions. This approach uses current input and early embedding to refine feature representation leading to more accurate detection. IDNs performance on the TVSeries and THUMOS14 datasets highlights its effectiveness in handling noisy input.
+
+\subsection{Comparative Analysis
+}
+
+\subsubsection{Temporal Dependency Handling
+}
+E2E LOAD excels at capturing long term dependencies with TCNs  making it ideal for long continuous video streams where actions span extended periods.
+IDN focuses on filtering relevant information and enhances RNN capabilities which are typically better for shorter temporal contexts compared to TCNs.
+
+\subsubsection{Relevance of Features
+}
+E2E LOAD integrates spatial and temporal features without explicitly filtering irrelevant data.
+IDN discriminates between relevant and irrelevant information using the IDU improving focus on current actions and reducing noise from irrelevant background activities.
+
+\subsubsection{Benchmark Performance
+}
+E2E-LOAD demonstrates robust performance across various datasets due to its comprehensive temporal context handling.
+IDN shows superior performance in noisy and cluttered environments with significant improvements on the TVSeries and THUMOS14 benchmarks.
+
+\subsubsection{Implementation Complexity
+}
+E2E LOAD may be more complex to implement due to the integration of spatial and temporal data and management of long term dependencies.
+IDN adds complexity through the IDU but remains relatively straightforward in enhancing RNN structures.
+
+}

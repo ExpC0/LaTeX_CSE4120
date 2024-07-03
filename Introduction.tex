@@ -1,0 +1,31 @@
+\section*{}
+\begin{center}
+    {\fontsize{14}{1.5}\selectfont \textbf{CHAPTER I}}\\
+    \vspace{12pt}
+    {\fontsize{16}{1.5}\selectfont \textbf{Introduction}}\\
+    \vspace{12pt}
+\end{center}
+
+\setcounter{section}{1}
+\setcounter{subsection}{0}
+\addcontentsline{toc}{section}{\textbf{CHAPTER I Introduction}} % Add to ToC
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\setcounter{equation}{0}
+\setlength{\parindent}{0pt}
+
+
+
+\subsection{Introduction} {
+
+Online action detection has emerge as a pivotal task within the field of computer vision, driven by the increasing demand for real-time analysis of video streams. Unlike traditional action recognition, which operates on pre-segmented video clips containing a single action, online action detection must contend with untrimmed video streams where multiple actions and background scenes coexist. This task is critical for various real-world applications, including video surveillance, autonomous driving, and interactive systems, where timely and accurate action detection can significantly enhance system responsiveness and user experience.
+\vspace{12pt}
+The challenge of online action detection lies in its inherent requirement to make immediate decisions based on incomplete information. In an untrimmed video stream, future frames are unavailable, necessitating predictions based solely on past and current observations. This temporal limitation complicates the accurate localization and classification of actions, as the system must handle high intra-class variability and the potential overlap of multiple actions within a single stream.
+\vspace{12pt}
+Recent advancements has addressed these challenges through the development of sophisticated algorithms and models capable of processing video data in real time. Notable techniques include the use of 3D convolutional neural networks (3D-CNNs) and long short-term memory (LSTM) networks, which capture both spatial and temporal features from video streams. Additionally, innovative approaches such as future frame generation and temporal context modeling have been proposed to enhance prediction accuracy under the constraints of online settings.
+\vspace{12pt}
+In this context, our study aims to further the state-of-the-art in online action detection by introducing novel methodologies that improve upon existing frameworks. We propose a comprehensive approach that integrates temporal priors and data augmentation strategies to better manage the complexities of untrimmed video streams.
+}

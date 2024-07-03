@@ -1,0 +1,51 @@
+\section*{}
+\begin{center}
+    {\fontsize{14}{1.5}\selectfont \textbf{CHAPTER VII}}\\
+    \vspace{12pt}
+    {\fontsize{16}{1.5}\selectfont \textbf{Conclusions}}\\
+    \vspace{12pt}
+    \vspace{12pt}
+\end{center}
+
+\setcounter{section}{7}
+\setcounter{subsection}{0}
+\addcontentsline{toc}{section}{\textbf{CHAPTER VII Conclusions}} % Add to ToC
+
+\subsection{Limitations} { 
+
+High Complexity and Computational Demand  The E2ELOAD architecture is complex . It requires substantial computational resources for training  . It can be making  difficult for those with limited access to advanced computing systems to implement. The training process is both resource intensive and time consuming. 
+
+Generalization challenges that the model shows strong performance on benchmark datasets.  It may struggle to generalize effectively to new unseen data and different contexts. This limitation is due to the training datasets which is encompassing the full range of variability .  It was found in real world scenarios which could affect the model's robustness.
+
+Reliance on temporal Consistency  that the model's effectiveness depends heavily on the temporal consistency of actions within videos. Variations or interruptions in action sequences can negatively impact performance . It suggests a need for further refinement to handle such inconsistencies far better.
+
+IDU - Information Discrimination Unit
+
+Distinguishing background and irrelevant actions  the IDU model is built to differentiate between relevant and irrelevant information. However it can be challenging to accurately distinguish between background noise and subtle action cues in highly dynamic environments. It potentially leads to missed action details and misclassification of background activities .
+
+Efficiency with long videos  the model's performance and accuracy can decline when processing extended video sequences. Maintaining temporal coherence and extracting relevant features over long periods is difficult for posing a challenge for the model's scalability.
+
+Realtime processing limitations  implementing the IDU model in realtime applications can be problematic due to potential latency issues. Ensuring that the model processes incoming data streams quickly enough to provide . Timely action detection is crucial but remains a significant challenge.
+
+Future frame generation FFG network for Online Action Detection
+
+Limited backpropagation during training the training process is hindered by the inability to backpropagate errors effectively across the entire network due to resource constraints. Each component PR AR F2G is trained separately which can lead to suboptimal learning and integration as the final detection network's errors do not influence the entire system.
+
+Dependence on Generated Frames: The performance of the FFG network is dependent on the quality of the generated future frames. If these generated frames are not accurate enough the overall detection performance can suffer. Current methods for frame generation still need to improve to match the realism and accuracy of actual frames.
+
+\subsection{Disscussion}
+Computational intensity in the framework's reliance on multiple deep networks . It constructs a sliding window approach results in high computational demands. This complexity poses challenges for realtime deployment. It  may not be feasible on standard hardware without significant optimizations
+
+Handling High IntraClass Variation: Recognizing actions with high intra class variability remains a challenge. While decomposing actions into beginning and finishing phases helps it does not fully address the issue of reliably detecting highly variable actions.
+
+Advancements in online action detection as illustrated by models like E2ELOAD and the Information Discrimination Network IDN mark substantial progress in the domain. These model introduced distinct strength and innovative solutions. It can tackle the challenges of realtime action detection.
+\subsection{Conclusion}
+E2ELOAD leverages temporal convolutional networks TCNs to effectively capture long term dependencies combining spatial and temporal information to boost detection accuracy. This method is particularly advantageous for analyzing longform videos where actions extend over considerable periods. Despite its complexity and high computational demands  for E2ELOAD . It demonstrates strong performance across various datasets. It is proving its capability in managing complex real world scenarios.
+
+IDN introduces the Information Discrimination Unit IDU to enhance feature relevance by filtering out irrelevant data. By improving recurrent neural networks RNNs this model focuses more precisely on ongoing actions significantly boosting detection accuracy in noisy and cluttered environments. IDN's strength lies in managing irrelevant information and maintaining high accuracy in early action detection making it highly effective for realtime applications.
+
+However both models have limitations. E2ELOAD’s complexity and significant computational requirements may limit its accessibility . Its dependency on temporal consistency can impact performances .  Meanwhile IDN though adept at filtering relevant information can struggle . It is distinguishing subtle action cues in dynamic environments .
+
+Future research should focus on enhancing computational efficiency.  It  is improving generalization capabilities and refining techniques. It is for managing variability and inconsistencies in action sequences . Addressing these challenges will help develop more robust efficient and accurate models.  It is  for a broader range of real world applications.
+
+In conclusion E2ELOAD , IDN each significantly advance online action detection. Their innovative approaches and proven effectiveness in various contexts highlight their potential. It is used  to meet the demands of realtime dynamic environments . It is paving the way for future improvements and applications in the field.}
