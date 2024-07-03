@@ -1,2 +1,2 @@
 # LaTeX_CSE4120
-Technical Writing and Seminar
+Technical Writing and Seminar - CSE,KUET
